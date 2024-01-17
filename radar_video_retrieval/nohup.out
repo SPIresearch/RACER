@@ -1,0 +1,412 @@
+Setup:
+	batch_size: 32
+	data_dir: /home/spi/xuyinsong/data/radar_dataset
+	epoch: 60
+	in_domain: True
+	lr: 0.01
+	method: baseline
+	no_freq_flip: False
+	no_freq_mask: False
+	no_mix_up: False
+	no_time_mask: False
+	no_time_pad: False
+	output_dir: result/in_domain
+	seed: 0
+	val_every: 5
+	weight_decay: 5e-05
+Setting up model train set length:   3503
+Ok
+Training
+	epoch     1/60: train loss: 0.46387, train acc: 0.13333 | val loss: 0.37765, val acc: 0.03373 | iter time: 53.98287
+	epoch     2/60: train loss: 0.36810, train acc: 0.06667 | val loss: 0.29073, val acc: 0.04078 | iter time: 52.98617
+	epoch     3/60: train loss: 0.36781, train acc: 0.06667 | val loss: 0.30057, val acc: 0.03394 | iter time: 53.03652
+	epoch     4/60: train loss: 0.28264, train acc: 0.06667 | val loss: 0.23685, val acc: 0.03478 | iter time: 53.15522
+	epoch     5/60: train loss: 0.26713, train acc: 0.06667 | val loss: 0.26080, val acc: 0.03990 | iter time: 52.97932
+	epoch     6/60: train loss: 0.23056, train acc: 0.06667 | val loss: 0.21838, val acc: 0.03857 | iter time: 53.19910
+	epoch     7/60: train loss: 0.24889, train acc: 0.06667 | val loss: 0.22866, val acc: 0.04371 | iter time: 52.90046
+	epoch     8/60: train loss: 0.20484, train acc: 0.06667 | val loss: 0.21747, val acc: 0.03497 | iter time: 53.01454
+	epoch     9/60: train loss: 0.24781, train acc: 0.06667 | val loss: 0.21103, val acc: 0.04293 | iter time: 53.02009
+	epoch    10/60: train loss: 0.21116, train acc: 0.13333 | val loss: 0.19637, val acc: 0.04187 | iter time: 53.15814
+	epoch    11/60: train loss: 0.20905, train acc: 0.06667 | val loss: 0.19828, val acc: 0.04587 | iter time: 52.91635
+	epoch    12/60: train loss: 0.19653, train acc: 0.06667 | val loss: 0.19907, val acc: 0.04387 | iter time: 53.04022
+	epoch    13/60: train loss: 0.19395, train acc: 0.13333 | val loss: 0.19112, val acc: 0.04586 | iter time: 53.23419
+	epoch    14/60: train loss: 0.20072, train acc: 0.06667 | val loss: 0.20522, val acc: 0.04768 | iter time: 53.08299
+	epoch    15/60: train loss: 0.19098, train acc: 0.06667 | val loss: 0.19701, val acc: 0.04880 | iter time: 53.01697
+	epoch    16/60: train loss: 0.19081, train acc: 0.13333 | val loss: 0.18138, val acc: 0.05567 | iter time: 53.38718
+	epoch    17/60: train loss: 0.17239, train acc: 0.13333 | val loss: 0.18852, val acc: 0.05189 | iter time: 52.91136
+	epoch    18/60: train loss: 0.19470, train acc: 0.13333 | val loss: 0.19363, val acc: 0.06484 | iter time: 53.23461
+	epoch    19/60: train loss: 0.18675, train acc: 0.06667 | val loss: 0.19029, val acc: 0.06463 | iter time: 52.99573
+	epoch    20/60: train loss: 0.17549, train acc: 0.20000 | val loss: 0.18572, val acc: 0.07483 | iter time: 53.16603
+	epoch    21/60: train loss: 0.18928, train acc: 0.06667 | val loss: 0.19042, val acc: 0.06881 | iter time: 53.26146
+	epoch    22/60: train loss: 0.18977, train acc: 0.00000 | val loss: 0.17803, val acc: 0.07589 | iter time: 53.65198
+	epoch    23/60: train loss: 0.20228, train acc: 0.06667 | val loss: 0.17522, val acc: 0.08473 | iter time: 53.20579
+	epoch    24/60: train loss: 0.19720, train acc: 0.20000 | val loss: 0.17028, val acc: 0.06375 | iter time: 53.56658
+	epoch    25/60: train loss: 0.20160, train acc: 0.06667 | val loss: 0.18114, val acc: 0.07589 | iter time: 52.88473
+	epoch    26/60: train loss: 0.19467, train acc: 0.13333 | val loss: 0.17352, val acc: 0.07278 | iter time: 53.17805
+	epoch    27/60: train loss: 0.20600, train acc: 0.00000 | val loss: 0.17548, val acc: 0.09185 | iter time: 52.97536
+	epoch    28/60: train loss: 0.20830, train acc: 0.06667 | val loss: 0.17970, val acc: 0.06893 | iter time: 53.24386
+	epoch    29/60: train loss: 0.20121, train acc: 0.00000 | val loss: 0.16505, val acc: 0.08470 | iter time: 52.97613
+	epoch    30/60: train loss: 0.19488, train acc: 0.00000 | val loss: 0.16687, val acc: 0.07592 | iter time: 53.16692
+	epoch    31/60: train loss: 0.20764, train acc: 0.00000 | val loss: 0.16186, val acc: 0.09085 | iter time: 52.97541
+	epoch    32/60: train loss: 0.20733, train acc: 0.06667 | val loss: 0.15706, val acc: 0.08476 | iter time: 53.37684
+	epoch    33/60: train loss: 0.21733, train acc: 0.06667 | val loss: 0.16077, val acc: 0.08976 | iter time: 53.07412
+	epoch    34/60: train loss: 0.19631, train acc: 0.00000 | val loss: 0.15947, val acc: 0.08482 | iter time: 53.22078
+	epoch    35/60: train loss: 0.17744, train acc: 0.13333 | val loss: 0.15793, val acc: 0.09067 | iter time: 53.13720
+	epoch    36/60: train loss: 0.21168, train acc: 0.00000 | val loss: 0.15666, val acc: 0.08077 | iter time: 53.42351
+	epoch    37/60: train loss: 0.19587, train acc: 0.13333 | val loss: 0.16071, val acc: 0.08791 | iter time: 53.02145
+	epoch    38/60: train loss: 0.20638, train acc: 0.06667 | val loss: 0.15523, val acc: 0.08591 | iter time: 53.51657
+	epoch    39/60: train loss: 0.21223, train acc: 0.06667 | val loss: 0.16425, val acc: 0.08579 | iter time: 52.97467
+	epoch    40/60: train loss: 0.20541, train acc: 0.20000 | val loss: 0.16876, val acc: 0.07868 | iter time: 53.31531
+	epoch    41/60: train loss: 0.19056, train acc: 0.00000 | val loss: 0.15400, val acc: 0.08383 | iter time: 53.05775
+	epoch    42/60: train loss: 0.20533, train acc: 0.00000 | val loss: 0.15330, val acc: 0.08083 | iter time: 53.64893
+	epoch    43/60: train loss: 0.19365, train acc: 0.00000 | val loss: 0.15375, val acc: 0.08280 | iter time: 53.09295
+	epoch    44/60: train loss: 0.18279, train acc: 0.00000 | val loss: 0.15320, val acc: 0.07992 | iter time: 53.69565
+	epoch    45/60: train loss: 0.19594, train acc: 0.13333 | val loss: 0.15271, val acc: 0.08361 | iter time: 53.10698
+	epoch    46/60: train loss: 0.19556, train acc: 0.13333 | val loss: 0.15265, val acc: 0.08183 | iter time: 53.49260
+	epoch    47/60: train loss: 0.18031, train acc: 0.20000 | val loss: 0.15290, val acc: 0.07974 | iter time: 53.05186
+	epoch    48/60: train loss: 0.19909, train acc: 0.13333 | val loss: 0.15293, val acc: 0.08071 | iter time: 53.58082
+	epoch    49/60: train loss: 0.19073, train acc: 0.13333 | val loss: 0.15306, val acc: 0.08582 | iter time: 52.98151
+	epoch    50/60: train loss: 0.21711, train acc: 0.00000 | val loss: 0.15263, val acc: 0.08479 | iter time: 53.27148
+	epoch    51/60: train loss: 0.20342, train acc: 0.06667 | val loss: 0.15253, val acc: 0.08991 | iter time: 52.85035
+	epoch    52/60: train loss: 0.17986, train acc: 0.06667 | val loss: 0.15287, val acc: 0.09176 | iter time: 53.36651
+	epoch    53/60: train loss: 0.14724, train acc: 0.13333 | val loss: 0.15332, val acc: 0.08485 | iter time: 52.88744
+	epoch    54/60: train loss: 0.19760, train acc: 0.06667 | val loss: 0.15291, val acc: 0.09266 | iter time: 53.12058
+	epoch    55/60: train loss: 0.15761, train acc: 0.00000 | val loss: 0.15264, val acc: 0.08764 | iter time: 53.20174
+	epoch    56/60: train loss: 0.20206, train acc: 0.06667 | val loss: 0.15267, val acc: 0.08682 | iter time: 53.13667
+	epoch    57/60: train loss: 0.19572, train acc: 0.06667 | val loss: 0.15172, val acc: 0.09291 | iter time: 52.95310
+	epoch    58/60: train loss: 0.16311, train acc: 0.06667 | val loss: 0.15249, val acc: 0.09434 | iter time: 53.47770
+	epoch    59/60: train loss: 0.17811, train acc: 0.00000 | val loss: 0.15140, val acc: 0.09064 | iter time: 53.14613
+	epoch    60/60: train loss: 0.19449, train acc: 0.00000 | val loss: 0.15224, val acc: 0.08791 | iter time: 53.30735
+Testing
+	test loss: 0.15249, R1: 0.09434, R5: 0.33411,, R10: 0.54958, MR: 9.29770
+Saving training stats Ok
+Setup:
+	batch_size: 32
+	data_dir: /home/spi/xuyinsong/data/radar_dataset
+	epoch: 60
+	in_domain: True
+	lr: 0.01
+	method: baseline
+	no_freq_flip: False
+	no_freq_mask: False
+	no_mix_up: False
+	no_time_mask: False
+	no_time_pad: False
+	output_dir: result/in_domain
+	seed: 0
+	val_every: 5
+	weight_decay: 5e-05
+Setting up model train set length:   3503
+Ok
+Training
+	epoch     1/60: train loss: 0.09872, train acc: 0.13333 | val loss: 0.10331, val acc: 0.00289 | iter time: 54.22929
+	epoch     2/60: train loss: 0.08948, train acc: 0.26667 | val loss: 0.07725, val acc: 0.00771 | iter time: 53.41197
+	epoch     3/60: train loss: 0.08752, train acc: 0.20000 | val loss: 0.08733, val acc: 0.00482 | iter time: 53.28991
+	epoch     4/60: train loss: 0.09096, train acc: 0.20000 | val loss: 0.06718, val acc: 0.01350 | iter time: 53.37290
+	epoch     5/60: train loss: 0.07783, train acc: 0.13333 | val loss: 0.10469, val acc: 0.00579 | iter time: 52.94342
+	epoch     6/60: train loss: 0.08301, train acc: 0.13333 | val loss: 0.09110, val acc: 0.00386 | iter time: 53.26914
+	epoch     7/60: train loss: 0.06970, train acc: 0.26667 | val loss: 0.07754, val acc: 0.00386 | iter time: 53.07816
+	epoch     8/60: train loss: 0.05984, train acc: 0.33333 | val loss: 0.09722, val acc: 0.00579 | iter time: 53.29504
+	epoch     9/60: train loss: 0.06616, train acc: 0.40000 | val loss: 0.06044, val acc: 0.01156 | iter time: 53.22857
+	epoch    10/60: train loss: 0.06383, train acc: 0.40000 | val loss: 0.07512, val acc: 0.00868 | iter time: 53.08130
+	epoch    11/60: train loss: 0.05373, train acc: 0.60000 | val loss: 0.06059, val acc: 0.01254 | iter time: 53.26984
+	epoch    12/60: train loss: 0.04967, train acc: 0.46667 | val loss: 0.07612, val acc: 0.00386 | iter time: 53.21676
+	epoch    13/60: train loss: 0.04976, train acc: 0.66667 | val loss: 0.08775, val acc: 0.00482 | iter time: 53.39561
+	epoch    14/60: train loss: 0.05518, train acc: 0.53333 | val loss: 0.05913, val acc: 0.00675 | iter time: 53.15420
+	epoch    15/60: train loss: 0.04992, train acc: 0.60000 | val loss: 0.07348, val acc: 0.00482 | iter time: 53.11528
+	epoch    16/60: train loss: 0.04267, train acc: 0.60000 | val loss: 0.07965, val acc: 0.00482 | iter time: 53.31880
+	epoch    17/60: train loss: 0.04758, train acc: 0.53333 | val loss: 0.08048, val acc: 0.01254 | iter time: 52.93575
+	epoch    18/60: train loss: 0.04470, train acc: 0.66667 | val loss: 0.15192, val acc: 0.00386 | iter time: 53.23234
+	epoch    19/60: train loss: 0.04186, train acc: 0.66667 | val loss: 0.11120, val acc: 0.00482 | iter time: 53.07765
+	epoch    20/60: train loss: 0.03700, train acc: 0.66667 | val loss: 0.05767, val acc: 0.01254 | iter time: 53.21246
+	epoch    21/60: train loss: 0.04256, train acc: 0.60000 | val loss: 0.05780, val acc: 0.01929 | iter time: 53.46747
+	epoch    22/60: train loss: 0.03667, train acc: 0.60000 | val loss: 0.04069, val acc: 0.01446 | iter time: 53.31009
+	epoch    23/60: train loss: 0.03146, train acc: 0.66667 | val loss: 0.05529, val acc: 0.00675 | iter time: 53.47443
+	epoch    24/60: train loss: 0.03545, train acc: 0.46667 | val loss: 0.04143, val acc: 0.01445 | iter time: 53.24830
+	epoch    25/60: train loss: 0.03170, train acc: 0.73333 | val loss: 0.03941, val acc: 0.01832 | iter time: 52.99195
+	epoch    26/60: train loss: 0.03202, train acc: 0.66667 | val loss: 0.04047, val acc: 0.01350 | iter time: 53.11750
+	epoch    27/60: train loss: 0.02577, train acc: 0.66667 | val loss: 0.03732, val acc: 0.03279 | iter time: 53.26962
+	epoch    28/60: train loss: 0.02910, train acc: 0.66667 | val loss: 0.03178, val acc: 0.04243 | iter time: 53.49282
+	epoch    29/60: train loss: 0.03456, train acc: 0.80000 | val loss: 0.03363, val acc: 0.01832 | iter time: 53.18416
+	epoch    30/60: train loss: 0.02495, train acc: 0.86667 | val loss: 0.04165, val acc: 0.01929 | iter time: 53.06907
+	epoch    31/60: train loss: 0.03443, train acc: 0.60000 | val loss: 0.03071, val acc: 0.03568 | iter time: 53.03335
+	epoch    32/60: train loss: 0.02652, train acc: 0.73333 | val loss: 0.02822, val acc: 0.04147 | iter time: 53.32554
+	epoch    33/60: train loss: 0.02822, train acc: 0.66667 | val loss: 0.02984, val acc: 0.02314 | iter time: 53.02844
+	epoch    34/60: train loss: 0.02758, train acc: 0.73333 | val loss: 0.02981, val acc: 0.03276 | iter time: 53.10329
+	epoch    35/60: train loss: 0.02397, train acc: 0.86667 | val loss: 0.03048, val acc: 0.03279 | iter time: 53.18409
+	epoch    36/60: train loss: 0.02512, train acc: 0.73333 | val loss: 0.05243, val acc: 0.01639 | iter time: 53.08603
+	epoch    37/60: train loss: 0.02486, train acc: 0.86667 | val loss: 0.03101, val acc: 0.02893 | iter time: 53.14561
+	epoch    38/60: train loss: 0.02265, train acc: 0.80000 | val loss: 0.02669, val acc: 0.03568 | iter time: 53.08774
+	epoch    39/60: train loss: 0.02417, train acc: 0.66667 | val loss: 0.03128, val acc: 0.03761 | iter time: 53.02394
+	epoch    40/60: train loss: 0.02324, train acc: 0.73333 | val loss: 0.02733, val acc: 0.04243 | iter time: 53.01350
+	epoch    41/60: train loss: 0.02278, train acc: 0.80000 | val loss: 0.02468, val acc: 0.05304 | iter time: 53.22401
+	epoch    42/60: train loss: 0.02512, train acc: 0.66667 | val loss: 0.02459, val acc: 0.05400 | iter time: 53.30640
+	epoch    43/60: train loss: 0.02165, train acc: 0.80000 | val loss: 0.02437, val acc: 0.05010 | iter time: 53.56000
+	epoch    44/60: train loss: 0.02208, train acc: 0.93333 | val loss: 0.02448, val acc: 0.05593 | iter time: 53.19262
+	epoch    45/60: train loss: 0.02227, train acc: 0.80000 | val loss: 0.02434, val acc: 0.05014 | iter time: 53.61481
+	epoch    46/60: train loss: 0.02351, train acc: 0.80000 | val loss: 0.02476, val acc: 0.05593 | iter time: 53.23529
+	epoch    47/60: train loss: 0.02316, train acc: 0.80000 | val loss: 0.02449, val acc: 0.05304 | iter time: 52.92436
+	epoch    48/60: train loss: 0.02351, train acc: 0.86667 | val loss: 0.02420, val acc: 0.05304 | iter time: 53.26011
+	epoch    49/60: train loss: 0.02331, train acc: 0.80000 | val loss: 0.02453, val acc: 0.04532 | iter time: 53.30793
+	epoch    50/60: train loss: 0.02581, train acc: 0.86667 | val loss: 0.02459, val acc: 0.04436 | iter time: 53.25460
+	epoch    51/60: train loss: 0.02529, train acc: 0.86667 | val loss: 0.02466, val acc: 0.04822 | iter time: 52.96443
+	epoch    52/60: train loss: 0.02242, train acc: 0.80000 | val loss: 0.02431, val acc: 0.04725 | iter time: 53.12422
+	epoch    53/60: train loss: 0.01965, train acc: 0.86667 | val loss: 0.02405, val acc: 0.04436 | iter time: 53.02719
+	epoch    54/60: train loss: 0.02401, train acc: 0.80000 | val loss: 0.02449, val acc: 0.04532 | iter time: 53.20425
+	epoch    55/60: train loss: 0.02017, train acc: 0.86667 | val loss: 0.02464, val acc: 0.04629 | iter time: 53.16948
+	epoch    56/60: train loss: 0.02223, train acc: 0.86667 | val loss: 0.02450, val acc: 0.05491 | iter time: 53.39432
+	epoch    57/60: train loss: 0.02417, train acc: 0.80000 | val loss: 0.02414, val acc: 0.04822 | iter time: 53.17087
+	epoch    58/60: train loss: 0.02143, train acc: 0.86667 | val loss: 0.02434, val acc: 0.04725 | iter time: 53.35709
+	epoch    59/60: train loss: 0.02200, train acc: 0.86667 | val loss: 0.02424, val acc: 0.04532 | iter time: 53.36833
+	epoch    60/60: train loss: 0.02433, train acc: 0.80000 | val loss: 0.02403, val acc: 0.04725 | iter time: 53.58977
+Testing
+	test loss: 0.02448, R1: 0.05593, R5: 0.20926,, R10: 0.32401, MR: 20.00000
+Saving training stats Ok
+Setup:
+	batch_size: 32
+	data_dir: /home/spi/xuyinsong/data/radar_dataset
+	epoch: 60
+	in_domain: False
+	lr: 0.01
+	method: baseline
+	no_freq_flip: False
+	no_freq_mask: False
+	no_mix_up: False
+	no_time_mask: False
+	no_time_pad: False
+	output_dir: result/out_domain
+	seed: 0
+	val_every: 5
+	weight_decay: 5e-05
+Setting up model OOD Mode
+train set length:   3500
+Ok
+Training
+	epoch     1/60: train loss: 0.12217, train acc: 0.33333 | val loss: 0.17555, val acc: 0.00199 | iter time: 54.81139
+	epoch     2/60: train loss: 0.11408, train acc: 0.25000 | val loss: 0.17728, val acc: 0.00299 | iter time: 53.80888
+	epoch     3/60: train loss: 0.10280, train acc: 0.33333 | val loss: 0.15644, val acc: 0.00299 | iter time: 53.92539
+	epoch     4/60: train loss: 0.10118, train acc: 0.08333 | val loss: 0.15864, val acc: 0.00299 | iter time: 53.51238
+	epoch     5/60: train loss: 0.08760, train acc: 0.33333 | val loss: 0.14740, val acc: 0.00199 | iter time: 53.30787
+	epoch     6/60: train loss: 0.08911, train acc: 0.33333 | val loss: 0.14736, val acc: 0.00199 | iter time: 53.35311
+	epoch     7/60: train loss: 0.08059, train acc: 0.41667 | val loss: 0.14052, val acc: 0.00100 | iter time: 53.41252
+	epoch     8/60: train loss: 0.08656, train acc: 0.33333 | val loss: 0.14756, val acc: 0.00398 | iter time: 53.58502
+	epoch     9/60: train loss: 0.08882, train acc: 0.33333 | val loss: 0.16324, val acc: 0.00199 | iter time: 53.70902
+	epoch    10/60: train loss: 0.09421, train acc: 0.41667 | val loss: 0.15116, val acc: 0.00199 | iter time: 53.36945
+	epoch    11/60: train loss: 0.08621, train acc: 0.41667 | val loss: 0.16290, val acc: 0.00199 | iter time: 53.22645
+	epoch    12/60: train loss: 0.08404, train acc: 0.33333 | val loss: 0.16766, val acc: 0.00199 | iter time: 53.40885
+	epoch    13/60: train loss: 0.07104, train acc: 0.50000 | val loss: 0.15431, val acc: 0.00199 | iter time: 53.50368
+	epoch    14/60: train loss: 0.07254, train acc: 0.33333 | val loss: 0.14486, val acc: 0.00498 | iter time: 53.22480
+	epoch    15/60: train loss: 0.05902, train acc: 0.58333 | val loss: 0.14284, val acc: 0.00598 | iter time: 53.49949
+	epoch    16/60: train loss: 0.06055, train acc: 0.66667 | val loss: 0.15454, val acc: 0.00498 | iter time: 53.42347
+	epoch    17/60: train loss: 0.05438, train acc: 0.58333 | val loss: 0.14130, val acc: 0.01096 | iter time: 53.05025
+	epoch    18/60: train loss: 0.05595, train acc: 0.58333 | val loss: 0.14164, val acc: 0.00697 | iter time: 53.45184
+	epoch    19/60: train loss: 0.05231, train acc: 0.66667 | val loss: 0.14162, val acc: 0.00498 | iter time: 53.52410
+	epoch    20/60: train loss: 0.04956, train acc: 0.58333 | val loss: 0.13900, val acc: 0.00896 | iter time: 53.20778
+	epoch    21/60: train loss: 0.03902, train acc: 0.66667 | val loss: 0.14226, val acc: 0.00598 | iter time: 53.55231
+	epoch    22/60: train loss: 0.03872, train acc: 0.75000 | val loss: 0.13999, val acc: 0.00797 | iter time: 53.51002
+	epoch    23/60: train loss: 0.04249, train acc: 0.75000 | val loss: 0.13999, val acc: 0.00697 | iter time: 54.00517
+	epoch    24/60: train loss: 0.03442, train acc: 0.75000 | val loss: 0.15140, val acc: 0.00498 | iter time: 53.33316
+	epoch    25/60: train loss: 0.03167, train acc: 0.66667 | val loss: 0.14828, val acc: 0.00598 | iter time: 53.26837
+	epoch    26/60: train loss: 0.03271, train acc: 0.58333 | val loss: 0.14241, val acc: 0.00996 | iter time: 53.18041
+	epoch    27/60: train loss: 0.03257, train acc: 0.66667 | val loss: 0.14761, val acc: 0.00697 | iter time: 53.31991
+	epoch    28/60: train loss: 0.03132, train acc: 0.58333 | val loss: 0.14800, val acc: 0.00598 | iter time: 53.63078
+	epoch    29/60: train loss: 0.03202, train acc: 0.75000 | val loss: 0.14497, val acc: 0.00996 | iter time: 53.45417
+	epoch    30/60: train loss: 0.03202, train acc: 0.58333 | val loss: 0.15497, val acc: 0.00398 | iter time: 53.22698
+	epoch    31/60: train loss: 0.03294, train acc: 0.66667 | val loss: 0.14799, val acc: 0.00598 | iter time: 53.29952
+	epoch    32/60: train loss: 0.02949, train acc: 0.83333 | val loss: 0.14386, val acc: 0.00996 | iter time: 53.34482
+	epoch    33/60: train loss: 0.03490, train acc: 0.58333 | val loss: 0.14142, val acc: 0.01194 | iter time: 53.39544
+	epoch    34/60: train loss: 0.03164, train acc: 0.66667 | val loss: 0.14956, val acc: 0.00598 | iter time: 53.26206
+	epoch    35/60: train loss: 0.02969, train acc: 0.58333 | val loss: 0.14608, val acc: 0.00697 | iter time: 53.49233
+	epoch    36/60: train loss: 0.02698, train acc: 0.75000 | val loss: 0.14392, val acc: 0.01295 | iter time: 53.22555
+	epoch    37/60: train loss: 0.02840, train acc: 0.66667 | val loss: 0.14379, val acc: 0.00996 | iter time: 53.52374
+	epoch    38/60: train loss: 0.02862, train acc: 0.75000 | val loss: 0.15385, val acc: 0.00299 | iter time: 53.41144
+	epoch    39/60: train loss: 0.02804, train acc: 0.75000 | val loss: 0.15195, val acc: 0.00696 | iter time: 53.51471
+	epoch    40/60: train loss: 0.02920, train acc: 0.66667 | val loss: 0.14761, val acc: 0.00697 | iter time: 53.47368
+	epoch    41/60: train loss: 0.02752, train acc: 0.75000 | val loss: 0.14616, val acc: 0.00498 | iter time: 53.41096
+	epoch    42/60: train loss: 0.02762, train acc: 0.75000 | val loss: 0.14619, val acc: 0.00498 | iter time: 53.68742
+	epoch    43/60: train loss: 0.02837, train acc: 0.83333 | val loss: 0.14652, val acc: 0.00598 | iter time: 53.55358
+	epoch    44/60: train loss: 0.02708, train acc: 0.91667 | val loss: 0.14727, val acc: 0.00498 | iter time: 53.40212
+	epoch    45/60: train loss: 0.02724, train acc: 0.83333 | val loss: 0.14609, val acc: 0.00598 | iter time: 53.50134
+	epoch    46/60: train loss: 0.02798, train acc: 0.66667 | val loss: 0.14714, val acc: 0.00598 | iter time: 53.78338
+	epoch    47/60: train loss: 0.02597, train acc: 0.75000 | val loss: 0.14576, val acc: 0.00498 | iter time: 53.32691
+	epoch    48/60: train loss: 0.02664, train acc: 0.75000 | val loss: 0.14684, val acc: 0.00498 | iter time: 53.28429
+	epoch    49/60: train loss: 0.02636, train acc: 0.75000 | val loss: 0.14627, val acc: 0.00598 | iter time: 53.31549
+	epoch    50/60: train loss: 0.02631, train acc: 0.75000 | val loss: 0.14576, val acc: 0.00398 | iter time: 53.75411
+	epoch    51/60: train loss: 0.02698, train acc: 0.66667 | val loss: 0.14631, val acc: 0.00697 | iter time: 53.12051
+	epoch    52/60: train loss: 0.02633, train acc: 0.83333 | val loss: 0.14633, val acc: 0.00497 | iter time: 53.30215
+	epoch    53/60: train loss: 0.02493, train acc: 0.83333 | val loss: 0.14603, val acc: 0.00697 | iter time: 53.40165
+	epoch    54/60: train loss: 0.02457, train acc: 0.83333 | val loss: 0.14620, val acc: 0.00598 | iter time: 53.53860
+	epoch    55/60: train loss: 0.02642, train acc: 0.75000 | val loss: 0.14768, val acc: 0.00498 | iter time: 53.42539
+	epoch    56/60: train loss: 0.02835, train acc: 0.75000 | val loss: 0.14646, val acc: 0.00797 | iter time: 53.19841
+	epoch    57/60: train loss: 0.03054, train acc: 0.83333 | val loss: 0.14675, val acc: 0.00697 | iter time: 53.49866
+	epoch    58/60: train loss: 0.02416, train acc: 0.91667 | val loss: 0.14629, val acc: 0.00697 | iter time: 53.65046
+	epoch    59/60: train loss: 0.02622, train acc: 0.66667 | val loss: 0.14767, val acc: 0.00597 | iter time: 53.61054
+	epoch    60/60: train loss: 0.02558, train acc: 0.91667 | val loss: 0.14620, val acc: 0.00697 | iter time: 53.34273
+Testing
+	test loss: 0.14392, R1: 0.01295, R5: 0.03088,, R10: 0.04582, MR: 182.50000
+Saving training stats Ok
+Setup:
+	batch_size: 32
+	data_dir: /home/spi/xuyinsong/data/radar_dataset
+	epoch: 60
+	in_domain: True
+	lr: 0.01
+	method: baseline
+	no_freq_flip: False
+	no_freq_mask: False
+	no_mix_up: False
+	no_time_mask: False
+	no_time_pad: False
+	output_dir: result/in_domain
+	seed: 0
+	val_every: 5
+	weight_decay: 5e-05
+Setting up model train set length:   3503
+Ok
+Training
+	epoch     1/60: train loss: 0.06029, train acc: 0.00000 | val loss: 0.05422, val acc: 0.01061 | iter time: 54.93784
+	epoch     2/60: train loss: 0.04856, train acc: 0.13333 | val loss: 0.04771, val acc: 0.00771 | iter time: 53.35559
+	epoch     3/60: train loss: 0.04221, train acc: 0.20000 | val loss: 0.03921, val acc: 0.00771 | iter time: 53.65194
+	epoch     4/60: train loss: 0.04384, train acc: 0.20000 | val loss: 0.03811, val acc: 0.00963 | iter time: 53.41511
+	epoch     5/60: train loss: 0.03655, train acc: 0.26667 | val loss: 0.04618, val acc: 0.01061 | iter time: 53.48708
+	epoch     6/60: train loss: 0.04146, train acc: 0.26667 | val loss: 0.03549, val acc: 0.00868 | iter time: 53.32915
+	epoch     7/60: train loss: 0.03452, train acc: 0.26667 | val loss: 0.04033, val acc: 0.00868 | iter time: 53.32623
+	epoch     8/60: train loss: 0.03628, train acc: 0.26667 | val loss: 0.03825, val acc: 0.00868 | iter time: 53.46784
+	epoch     9/60: train loss: 0.03542, train acc: 0.13333 | val loss: 0.04222, val acc: 0.00675 | iter time: 53.58079
+	epoch    10/60: train loss: 0.03596, train acc: 0.26667 | val loss: 0.03113, val acc: 0.01157 | iter time: 53.43349
+	epoch    11/60: train loss: 0.03274, train acc: 0.26667 | val loss: 0.03451, val acc: 0.00675 | iter time: 53.51637
+	epoch    12/60: train loss: 0.03057, train acc: 0.33333 | val loss: 0.03295, val acc: 0.01061 | iter time: 53.31202
+	epoch    13/60: train loss: 0.02747, train acc: 0.40000 | val loss: 0.03006, val acc: 0.01736 | iter time: 53.50877
+	epoch    14/60: train loss: 0.02979, train acc: 0.40000 | val loss: 0.03570, val acc: 0.00963 | iter time: 53.21779
+	epoch    15/60: train loss: 0.02778, train acc: 0.46667 | val loss: 0.02521, val acc: 0.01832 | iter time: 53.45439
+	epoch    16/60: train loss: 0.02577, train acc: 0.46667 | val loss: 0.04227, val acc: 0.00771 | iter time: 53.38927
+	epoch    17/60: train loss: 0.02371, train acc: 0.53333 | val loss: 0.02883, val acc: 0.01543 | iter time: 53.49073
+	epoch    18/60: train loss: 0.02218, train acc: 0.53333 | val loss: 0.02400, val acc: 0.01736 | iter time: 53.25296
+	epoch    19/60: train loss: 0.02023, train acc: 0.53333 | val loss: 0.03807, val acc: 0.00675 | iter time: 53.47718
+	epoch    20/60: train loss: 0.01814, train acc: 0.66667 | val loss: 0.02736, val acc: 0.01350 | iter time: 53.44983
+	epoch    21/60: train loss: 0.02144, train acc: 0.53333 | val loss: 0.02885, val acc: 0.00771 | iter time: 53.44736
+	epoch    22/60: train loss: 0.02043, train acc: 0.60000 | val loss: 0.02235, val acc: 0.01736 | iter time: 53.57318
+	epoch    23/60: train loss: 0.01923, train acc: 0.46667 | val loss: 0.03070, val acc: 0.01446 | iter time: 53.59705
+	epoch    24/60: train loss: 0.01928, train acc: 0.53333 | val loss: 0.03173, val acc: 0.01061 | iter time: 53.46000
+	epoch    25/60: train loss: 0.01810, train acc: 0.53333 | val loss: 0.02519, val acc: 0.01543 | iter time: 53.30630
+	epoch    26/60: train loss: 0.01701, train acc: 0.53333 | val loss: 0.02647, val acc: 0.02599 | iter time: 53.30080
+	epoch    27/60: train loss: 0.01329, train acc: 0.73333 | val loss: 0.04351, val acc: 0.00386 | iter time: 53.38770
+	epoch    28/60: train loss: 0.01629, train acc: 0.46667 | val loss: 0.04951, val acc: 0.00386 | iter time: 53.31182
+	epoch    29/60: train loss: 0.01723, train acc: 0.60000 | val loss: 0.03937, val acc: 0.00964 | iter time: 53.34892
+	epoch    30/60: train loss: 0.01134, train acc: 0.73333 | val loss: 0.04106, val acc: 0.00964 | iter time: 52.96511
+	epoch    31/60: train loss: 0.01578, train acc: 0.46667 | val loss: 0.07718, val acc: 0.00096 | iter time: 53.64624
+	epoch    32/60: train loss: 0.01187, train acc: 0.60000 | val loss: 0.03287, val acc: 0.00964 | iter time: 53.36770
+	epoch    33/60: train loss: 0.01374, train acc: 0.46667 | val loss: 0.06915, val acc: 0.00193 | iter time: 53.55183
+	epoch    34/60: train loss: 0.01028, train acc: 0.73333 | val loss: 0.05558, val acc: 0.00385 | iter time: 53.27652
+	epoch    35/60: train loss: 0.01111, train acc: 0.73333 | val loss: 0.01575, val acc: 0.02797 | iter time: 53.51872
+	epoch    36/60: train loss: 0.00941, train acc: 0.66667 | val loss: 0.01407, val acc: 0.03279 | iter time: 53.45329
+	epoch    37/60: train loss: 0.01289, train acc: 0.46667 | val loss: 0.02812, val acc: 0.01350 | iter time: 53.50057
+	epoch    38/60: train loss: 0.00939, train acc: 0.66667 | val loss: 0.02897, val acc: 0.02122 | iter time: 53.29971
+	epoch    39/60: train loss: 0.00883, train acc: 0.80000 | val loss: 0.01973, val acc: 0.02507 | iter time: 53.32030
+	epoch    40/60: train loss: 0.00771, train acc: 0.66667 | val loss: 0.01435, val acc: 0.02797 | iter time: 53.39160
+	epoch    41/60: train loss: 0.00904, train acc: 0.66667 | val loss: 0.01210, val acc: 0.03954 | iter time: 53.39741
+	epoch    42/60: train loss: 0.00737, train acc: 0.60000 | val loss: 0.01201, val acc: 0.03761 | iter time: 53.54424
+	epoch    43/60: train loss: 0.01068, train acc: 0.53333 | val loss: 0.01199, val acc: 0.03568 | iter time: 53.48970
+	epoch    44/60: train loss: 0.00815, train acc: 0.66667 | val loss: 0.01205, val acc: 0.03664 | iter time: 53.52858
+	epoch    45/60: train loss: 0.00712, train acc: 0.73333 | val loss: 0.01207, val acc: 0.03568 | iter time: 53.45251
+	epoch    46/60: train loss: 0.00771, train acc: 0.80000 | val loss: 0.01199, val acc: 0.03568 | iter time: 53.39947
+	epoch    47/60: train loss: 0.00851, train acc: 0.73333 | val loss: 0.01185, val acc: 0.04050 | iter time: 53.33727
+	epoch    48/60: train loss: 0.00830, train acc: 0.73333 | val loss: 0.01186, val acc: 0.03857 | iter time: 53.36683
+	epoch    49/60: train loss: 0.00828, train acc: 0.60000 | val loss: 0.01188, val acc: 0.03761 | iter time: 53.54737
+	epoch    50/60: train loss: 0.00775, train acc: 0.66667 | val loss: 0.01179, val acc: 0.03279 | iter time: 53.24946
+	epoch    51/60: train loss: 0.00667, train acc: 0.86667 | val loss: 0.01182, val acc: 0.03568 | iter time: 53.05703
+	epoch    52/60: train loss: 0.00754, train acc: 0.80000 | val loss: 0.01176, val acc: 0.04050 | iter time: 53.39358
+	epoch    53/60: train loss: 0.00653, train acc: 0.93333 | val loss: 0.01176, val acc: 0.03375 | iter time: 53.39376
+	epoch    54/60: train loss: 0.00743, train acc: 0.80000 | val loss: 0.01180, val acc: 0.03375 | iter time: 53.21271
+	epoch    55/60: train loss: 0.00662, train acc: 0.66667 | val loss: 0.01172, val acc: 0.03279 | iter time: 53.38245
+	epoch    56/60: train loss: 0.00654, train acc: 0.80000 | val loss: 0.01164, val acc: 0.03664 | iter time: 53.19756
+	epoch    57/60: train loss: 0.01089, train acc: 0.73333 | val loss: 0.01168, val acc: 0.03857 | iter time: 53.39545
+	epoch    58/60: train loss: 0.00818, train acc: 0.73333 | val loss: 0.01173, val acc: 0.03664 | iter time: 53.39308
+	epoch    59/60: train loss: 0.00756, train acc: 0.73333 | val loss: 0.01167, val acc: 0.03857 | iter time: 53.64214
+	epoch    60/60: train loss: 0.00944, train acc: 0.66667 | val loss: 0.01178, val acc: 0.03664 | iter time: 53.22353
+Testing
+	test loss: 0.01185, R1: 0.04050, R5: 0.15429,, R10: 0.25940, MR: 26.00000
+Saving training stats Ok
+Setup:
+	batch_size: 32
+	data_dir: /home/spi/xuyinsong/data/radar_dataset
+	epoch: 60
+	in_domain: False
+	lr: 0.01
+	method: baseline
+	no_freq_flip: False
+	no_freq_mask: False
+	no_mix_up: False
+	no_time_mask: False
+	no_time_pad: False
+	output_dir: result/out_domain
+	seed: 0
+	val_every: 5
+	weight_decay: 5e-05
+Setting up model OOD Mode
+train set length:   3500
+Ok
+Training
+	epoch     1/60: train loss: 0.06290, train acc: 0.41667 | val loss: 0.08435, val acc: 0.00497 | iter time: 54.71819
+	epoch     2/60: train loss: 0.05709, train acc: 0.25000 | val loss: 0.09143, val acc: 0.00100 | iter time: 53.93981
+	epoch     3/60: train loss: 0.04940, train acc: 0.33333 | val loss: 0.07967, val acc: 0.00199 | iter time: 53.55158
+	epoch     4/60: train loss: 0.04664, train acc: 0.16667 | val loss: 0.07704, val acc: 0.00498 | iter time: 53.46415
+	epoch     5/60: train loss: 0.04316, train acc: 0.33333 | val loss: 0.09854, val acc: 0.00199 | iter time: 53.44000
+	epoch     6/60: train loss: 0.04681, train acc: 0.33333 | val loss: 0.07547, val acc: 0.00598 | iter time: 53.39574
+	epoch     7/60: train loss: 0.04083, train acc: 0.33333 | val loss: 0.08933, val acc: 0.00199 | iter time: 53.28841
+	epoch     8/60: train loss: 0.04090, train acc: 0.33333 | val loss: 0.08304, val acc: 0.00299 | iter time: 53.57838
+	epoch     9/60: train loss: 0.04200, train acc: 0.41667 | val loss: 0.07639, val acc: 0.00498 | iter time: 53.49771
+	epoch    10/60: train loss: 0.04404, train acc: 0.33333 | val loss: 0.07543, val acc: 0.00398 | iter time: 53.68949
+	epoch    11/60: train loss: 0.04227, train acc: 0.33333 | val loss: 0.07580, val acc: 0.00398 | iter time: 53.21653
+	epoch    12/60: train loss: 0.04229, train acc: 0.33333 | val loss: 0.08766, val acc: 0.00299 | iter time: 53.59603
+	epoch    13/60: train loss: 0.03293, train acc: 0.41667 | val loss: 0.07944, val acc: 0.00299 | iter time: 53.56297
+	epoch    14/60: train loss: 0.04021, train acc: 0.25000 | val loss: 0.08216, val acc: 0.00298 | iter time: 53.38654
+	epoch    15/60: train loss: 0.03463, train acc: 0.33333 | val loss: 0.07863, val acc: 0.00398 | iter time: 53.62243
+	epoch    16/60: train loss: 0.03636, train acc: 0.50000 | val loss: 0.08368, val acc: 0.00199 | iter time: 53.60795
+	epoch    17/60: train loss: 0.03614, train acc: 0.50000 | val loss: 0.07375, val acc: 0.00299 | iter time: 53.28319
+	epoch    18/60: train loss: 0.04131, train acc: 0.41667 | val loss: 0.07416, val acc: 0.00299 | iter time: 53.58764
+	epoch    19/60: train loss: 0.03465, train acc: 0.33333 | val loss: 0.07257, val acc: 0.00299 | iter time: 53.51920
+	epoch    20/60: train loss: 0.03466, train acc: 0.41667 | val loss: 0.07231, val acc: 0.00199 | iter time: 53.50043
+	epoch    21/60: train loss: 0.03222, train acc: 0.58333 | val loss: 0.07308, val acc: 0.00199 | iter time: 53.65519
+	epoch    22/60: train loss: 0.03689, train acc: 0.50000 | val loss: 0.07129, val acc: 0.00398 | iter time: 53.48787
+	epoch    23/60: train loss: 0.02788, train acc: 0.41667 | val loss: 0.07041, val acc: 0.00498 | iter time: 53.53044
+	epoch    24/60: train loss: 0.03470, train acc: 0.50000 | val loss: 0.07207, val acc: 0.00398 | iter time: 53.99070
+	epoch    25/60: train loss: 0.02796, train acc: 0.41667 | val loss: 0.07266, val acc: 0.00598 | iter time: 53.26742
+	epoch    26/60: train loss: 0.02306, train acc: 0.66667 | val loss: 0.07154, val acc: 0.00398 | iter time: 53.33827
+	epoch    27/60: train loss: 0.02426, train acc: 0.50000 | val loss: 0.07439, val acc: 0.00398 | iter time: 53.46225
+	epoch    28/60: train loss: 0.02418, train acc: 0.66667 | val loss: 0.07227, val acc: 0.00498 | iter time: 53.54443
+	epoch    29/60: train loss: 0.02392, train acc: 0.58333 | val loss: 0.07123, val acc: 0.00398 | iter time: 53.53556
+	epoch    30/60: train loss: 0.02262, train acc: 0.50000 | val loss: 0.07072, val acc: 0.00498 | iter time: 53.38962
+	epoch    31/60: train loss: 0.02100, train acc: 0.66667 | val loss: 0.07105, val acc: 0.00299 | iter time: 53.49071
+	epoch    32/60: train loss: 0.01922, train acc: 0.66667 | val loss: 0.06996, val acc: 0.00498 | iter time: 53.44265
+	epoch    33/60: train loss: 0.01482, train acc: 0.75000 | val loss: 0.07121, val acc: 0.00398 | iter time: 53.40438
+	epoch    34/60: train loss: 0.01385, train acc: 0.66667 | val loss: 0.06917, val acc: 0.00498 | iter time: 53.45904
+	epoch    35/60: train loss: 0.01419, train acc: 0.58333 | val loss: 0.07628, val acc: 0.00498 | iter time: 53.43766
+	epoch    36/60: train loss: 0.01410, train acc: 0.66667 | val loss: 0.07404, val acc: 0.00498 | iter time: 53.85329
+	epoch    37/60: train loss: 0.01391, train acc: 0.83333 | val loss: 0.07336, val acc: 0.00996 | iter time: 53.35422
+	epoch    38/60: train loss: 0.01002, train acc: 0.66667 | val loss: 0.06950, val acc: 0.00994 | iter time: 53.39624
+	epoch    39/60: train loss: 0.01215, train acc: 0.66667 | val loss: 0.06989, val acc: 0.00697 | iter time: 53.52486
+	epoch    40/60: train loss: 0.00838, train acc: 0.75000 | val loss: 0.06892, val acc: 0.00797 | iter time: 53.30869
+	epoch    41/60: train loss: 0.01088, train acc: 0.58333 | val loss: 0.07322, val acc: 0.00299 | iter time: 53.78346
+	epoch    42/60: train loss: 0.00895, train acc: 0.75000 | val loss: 0.07308, val acc: 0.00299 | iter time: 53.56703
+	epoch    43/60: train loss: 0.01149, train acc: 0.58333 | val loss: 0.07333, val acc: 0.00498 | iter time: 53.79515
+	epoch    44/60: train loss: 0.01017, train acc: 0.66667 | val loss: 0.07393, val acc: 0.00299 | iter time: 53.56371
+	epoch    45/60: train loss: 0.01221, train acc: 0.66667 | val loss: 0.07353, val acc: 0.00498 | iter time: 53.57348
+	epoch    46/60: train loss: 0.01160, train acc: 0.58333 | val loss: 0.07407, val acc: 0.00498 | iter time: 53.66322
+	epoch    47/60: train loss: 0.00998, train acc: 0.66667 | val loss: 0.07336, val acc: 0.00498 | iter time: 53.54133
+	epoch    48/60: train loss: 0.00801, train acc: 0.83333 | val loss: 0.07335, val acc: 0.00597 | iter time: 53.38408
+	epoch    49/60: train loss: 0.01037, train acc: 0.75000 | val loss: 0.07363, val acc: 0.00398 | iter time: 53.72682
+	epoch    50/60: train loss: 0.00935, train acc: 0.75000 | val loss: 0.07388, val acc: 0.00398 | iter time: 53.51020
+	epoch    51/60: train loss: 0.00856, train acc: 0.66667 | val loss: 0.07397, val acc: 0.00498 | iter time: 53.43846
+	epoch    52/60: train loss: 0.00957, train acc: 0.75000 | val loss: 0.07344, val acc: 0.00598 | iter time: 53.41206
+	epoch    53/60: train loss: 0.00901, train acc: 0.75000 | val loss: 0.07397, val acc: 0.00398 | iter time: 53.29111
+	epoch    54/60: train loss: 0.01097, train acc: 0.66667 | val loss: 0.07391, val acc: 0.00498 | iter time: 53.50016
+	epoch    55/60: train loss: 0.01036, train acc: 0.75000 | val loss: 0.07387, val acc: 0.00498 | iter time: 53.53586
+	epoch    56/60: train loss: 0.01023, train acc: 0.66667 | val loss: 0.07413, val acc: 0.00398 | iter time: 53.38438
+	epoch    57/60: train loss: 0.01132, train acc: 0.58333 | val loss: 0.07403, val acc: 0.00398 | iter time: 53.37138
+	epoch    58/60: train loss: 0.00749, train acc: 0.66667 | val loss: 0.07425, val acc: 0.00498 | iter time: 53.46971
+	epoch    59/60: train loss: 0.01011, train acc: 0.66667 | val loss: 0.07481, val acc: 0.00398 | iter time: 53.53880
+	epoch    60/60: train loss: 0.00826, train acc: 0.66667 | val loss: 0.07374, val acc: 0.00498 | iter time: 53.20348
+Testing
+	test loss: 0.07336, R1: 0.00996, R5: 0.04880,, R10: 0.07570, MR: 128.00000
+Saving training stats Ok
